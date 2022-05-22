@@ -1,12 +1,11 @@
-var proxy = "PROXY xi.dnsfree.space:443;";
-
+var proxy = "PROXY 104.16.21.249:443;";
+        
 var domains = {
   "huaglad.com": 1,
   "slideshare.net": 1,
   "tumblr.com": 1,
   "bbc.co.uk": 1,
   "pinterest.com": 1,
-  "doubleclick.net": 1,
   "googleadsensetvsite.com": 1,
   "googlesyndication.com": 1, 
   "googletagmanager.com": 1, 
@@ -507,7 +506,6 @@ var domains = {
   "fb.me": 1, 
   "fbcdn.net": 1, 
   "fbsbx.com": 1, 
-  "fdc89.jp": 1, 
   "feedburner.com": 1, 
   "feministteacher.com": 1, 
   "ff.im": 1, 
@@ -990,7 +988,6 @@ var domains = {
   "mingpaotor.com": 1, 
   "mingpaovan.com": 1, 
   "minimalmac.com": 1, 
-  "mininova.org": 1, 
   "minzhuhua.net": 1, 
   "minzhuzhanxian.com": 1, 
   "minzhuzhongguo.org": 1, 
@@ -2185,9 +2182,6 @@ var domains = {
   "zsrhao.com": 1, 
   "zuo.la": 1, 
   "zuola.com": 1, 
-  "zvereff.com": 1,
-  "glosbe.com": 1, 
-  "zyzc9.com": 1
 };
 
 var direct = 'DIRECT;';
