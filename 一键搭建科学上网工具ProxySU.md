@@ -1,3 +1,5 @@
+**2022年9月15日更新。**
+
 **2022年4月12日更新ProxySU的推荐版本v2.4.0，解决提示域名解析错误的问题。注意：ProxySU官网的最新版已经去掉了很多款工具的搭建模块，如果想按照教程那样搭建SSR等工具，可以下载旧版，本页面也有下载ProxySU-v2.4.0旧版的地址。**
 
 ***
@@ -5,7 +7,7 @@
 
 **介绍**:
 
-ProxySU是一款windows科学上网搭建软件，支持一键搭建V2ray，Trojan，NaiveProxy, Trojan-Go, ShadowsocksR(SSR),Shadowsocks-libev及相关插件一键安装工具。
+ProxySU是一款windows科学上网搭建软件，**不用输入代码、不用脚本**，支持一键搭建V2ray，Trojan，NaiveProxy, Trojan-Go, ShadowsocksR(SSR),Shadowsocks-libev及相关插件一键安装工具。
 
 **使用提醒**：
 
@@ -76,27 +78,13 @@ ProxySU的安装流程，是假设在全新系统下，没有装过以上代理�
 
 VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、稳定且性价比高，按小时计费，能够随时开通和删除服务器，新服务器即是新ip。
 
-vultr注册地址：https://www.vultr.com/?ref=7048874  （vps最低2.5美元/月，vultr全球17个服务器位置可选，包括日本、韩国、新加坡、洛杉矶、德国、荷兰等。支持支付宝和paypal付款。） 
+vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球25个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。） 
 
 <a href="https://www.vultr.com/?ref=7048874 "><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
 
 虽然是英文界面，但是现在的浏览器都有网页翻译功能，鼠标点击右键，选择网页翻译即可翻译成中文。
 
 注册并邮件激活账号，充值后即可购买服务器。充值方式是支付宝或paypal，使用paypal有银行卡（包括信用卡）即可。paypal注册地址：https://www.paypal.com （paypal是国际知名的第三方支付服务商，注册一下账号，绑定银行卡即可购买国外商品）
-
-***
-
-2.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**不推荐，仅提供ipv6 ip，不推荐**)
-
-3.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**推荐**)
-
-5美元/月的服务器配置信息：  单核   1G内存    25G SSD硬盘   带宽1G    1000G流量/月  (**推荐**)
- 
-10美元/月的服务器配置信息： 单核   2G内存    55G SSD硬盘   带宽1G    2000G流量/月  
-
-20美元/月的服务器配置信息： 2cpu   4G内存   80G SSD硬盘    带宽1G    3000G流量/月  
-
-40美元/月的服务器配置信息： 4cpu   8G内存   160G SSD硬盘   带宽1G    4000G流量/月  
 
 ***
 
@@ -127,7 +115,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
-可以优先尝试洛杉矶服务器，亚洲服务器日本、韩国延迟较低，但用的人很多，国内速度不一定就会很好，当然其它服务器位置也可以尝试。
+电信用户推荐洛杉矶服务器；联通、移动用户推荐韩国、洛杉矶服务器。其它位置也可以尝试。
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
 
@@ -143,11 +131,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
 
-最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+最后点击“Deploy Now”开始部署，等2~3分钟就差不多了。此时也会收到vultr官方发来的“Cloud Server Activated”邮件提醒。
 
-
-
-**开通服务器时，当出现了ip，不要立马去ping或者用ProxySU去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统密码获取方法如下图：**
+**完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
@@ -167,7 +153,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 当前提供下载的版本为ProxySU-v2.4.0,文件很小,大小为569kb.注意：ProxySU官网的最新版已经去掉了很多款工具的搭建模块，如果想按照教程那样搭建SSR等工具，可以下载旧版。
 
-[国外云盘下载1](https://tr601.free4444.xyz/ProxySU-v2.4.0.zip)  [国外云盘下载2](https://tr201.free4444.xyz/ProxySU-v2.4.0.zip)  
+[国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.4.0.zip)  [国外云盘下载2](https://d1.freessr1.xyz/ProxySU-v2.4.0.zip)  
 
 
 **如果在安装过程中总是提示某个错误，也可以尝试其它ProxySU版本，官方其它版本下载**：https://github.com/proxysu/ProxySU/releases
@@ -226,6 +212,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 [自建ss/ssr服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建v2ray服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
+[自建hysteria服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAhysteria%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建brook服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAbrook%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建trojan服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAtrojan%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建WireGuard VPN服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAWireGuard-VPN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 

@@ -1,6 +1,6 @@
-**2022年4月16日更新trojan账号设置方法。**
+**2022年9月29日更新。**
 
-**如果无法查看图片，可以访问https://tr2.freeair888.club/自建trojan服务器教程/**
+**如果无法查看图片，可以访问https://tr3.freeair888.club/自建trojan服务器教程/**
 
 ***
 
@@ -21,7 +21,7 @@
 
 VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、稳定且性价比高，按小时计费，能够随时开通和删除服务器，新服务器即是新ip。
 
-vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球17个服务器位置可选，包括日本、韩国、新加坡、洛杉矶、德国、荷兰等。支持支付宝和paypal付款。） 
+vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球25个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。） 
 
 <a href="https://www.vultr.com/?ref=7048874"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
 
@@ -31,19 +31,6 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 
 ***
 
-2.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**不推荐，仅提供ipv6 ip，不推荐**)
-
-3.5美元/月的服务器配置信息：单核   512M内存  10G SSD硬盘   带宽1G    500G流量/月   (**推荐**)
-
-5美元/月的服务器配置信息：  单核   1G内存    25G SSD硬盘   带宽1G    1000G流量/月  (**推荐**)
- 
-10美元/月的服务器配置信息： 单核   2G内存    55G SSD硬盘   带宽1G    2000G流量/月  
-
-20美元/月的服务器配置信息： 2cpu   4G内存   80G SSD硬盘    带宽1G    3000G流量/月  
-
-40美元/月的服务器配置信息： 4cpu   8G内存   160G SSD硬盘   带宽1G    4000G流量/月  
-
-***
 
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
@@ -72,7 +59,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
-可以优先尝试洛杉矶服务器，亚洲服务器日本、韩国延迟较低，但用的人很多，国内速度不一定就会很好，当然其它服务器位置也可以尝试。
+电信用户推荐洛杉矶服务器；联通、移动用户推荐韩国、洛杉矶服务器。其它位置也可以尝试。
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
 
@@ -88,13 +75,14 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
 
-最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+最后点击“Deploy Now”开始部署，等2~3分钟就差不多了。此时也会收到vultr官方发来的“Cloud Server Activated”邮件提醒。
 
-**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
+**完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程06.png)
+
 
 **删掉服务器步骤如下图**：
 
@@ -121,8 +109,8 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
 
-[国外云盘1下载](https://tr601.free4444.xyz/Xshell_setup_wm.exe)
-[国外云盘2下载](https://tr201.free4444.xyz/Xshell_setup_wm.exe)
+[国外云盘1下载](https://d2.freessr2.xyz/Xshell_setup_wm.exe)
+[国外云盘2下载](https://d.ssrfree4.xyz/Xshell_setup_wm.exe)
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
