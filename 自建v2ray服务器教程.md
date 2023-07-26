@@ -1,6 +1,6 @@
-**2022年9月29日更新。如果用脚本安装v2ray后启动不成功，教程更新了解决方法。**
+**2023年6月15日更新。**
 
-**如果无法查看图片，可以访问https://tr3.freeair888.club/自建v2ray服务器教程/**
+**2023年5月4日更新。教程末尾增加八合一共存脚本。**
 
 ***
 
@@ -77,7 +77,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
 
-最后点击“Deploy Now”开始部署，等2~3分钟就差不多了。此时也会收到vultr官方发来的“Cloud Server Activated”邮件提醒。
+最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
 
 **完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
@@ -137,7 +137,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**：
+**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**（ps：如果这个脚本不好用，教程末尾还有一个八合一共存脚本）
 
 安装命令：
 
@@ -346,11 +346,34 @@ service ntpd start
 
 **3、搭建的账号之前能用，突然不能用了，怎么解决？**
 
-**如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。**
+如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。
 
-**如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。**
+如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。
 
-**如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。**
+如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。
+
+**4、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
+
+支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
+
+脚本：wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+
+备用：wget -P /root -N --no-check-certificate "https://www.v2ray-agent.com/v2ray-agent/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+
+**一图教程(快速使用)**：
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-1.jpg)
+
+**进阶使用**：
+
+1、个性化安装
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-2.jpg)
+
+2.单独安装Reality（无需域名）（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-3.jpg)
+
 
 ***
 
