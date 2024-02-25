@@ -1,6 +1,4 @@
-**2023年6月15日更新。**
-
-**2023年5月4日更新。教程末尾增加八合一共存脚本。**
+**2024年1月1日更新，解决图片显示问题。**
 
 ***
 
@@ -34,67 +32,66 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 
 ***
 
-
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
 vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Billing选项里可以看到账户余额。
 
 **账号充值如图**：
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
 
 选择“Cloud Compute”。
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
 
 选择“Regular Performance”。如果选择这个，在下面选择具体套餐的时候，最低是3.5美元/月（也要看服务器位置），流量是500GB/月；5美元是1T流量/月。
 
 如果选择前面3个，在下面选择具体套餐的时候，最低是6美元/月，但6美元是2T流量/月。也就是，对流量需求较高的可以选择前面3个。
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
 电信用户推荐洛杉矶服务器；联通、移动用户推荐韩国、洛杉矶服务器。其它位置也可以尝试。
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
 
 **点击图中的系统名字，会弹出具体系统版本，推荐Debain10 （不要选CentOS7！）**
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
 
 选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
 
 关闭自动备份，这个是收费的，可以关闭它。
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
 
 最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
 
 **完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
 
 
 **删掉服务器步骤如下图**：
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
 
 ***
 
@@ -103,11 +100,11 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
 
 [国外云盘1下载](https://d2.freessr2.xyz/Xshell_setup_wm.exe)
-[国外云盘2下载](https://d.ssrfree4.xyz/Xshell_setup_wm.exe)
+[国外云盘2下载](https://d.dtku35.xyz/Xshell_setup_wm.exe)
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/Mac.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/Mac.png)
 
 如果不能用Mac自带的终端连接的话，直接网上搜“Mac连接SSH的软件”，有很多，然后通过软件来连接vps服务器就行，具体操作方式参考windows xshell。Mac成功连接vps后剩下的操作和windows一样。
 
@@ -117,23 +114,23 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 下载windows xshell软件并安装后，打开软件
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell11.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell11.png)
 
 选择文件，新建
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell12.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell12.png)
 
 随便取个名字，然后把你的服务器ip填上
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell13.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell13.png)
 
 连接国外ip即服务器时，软件会先后提醒你输入用户名和密码，用户名默认都是root，密码是你购买的服务器系统的密码。
 
 **如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被墙的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。**
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell14.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell14.png)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/xshell2.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/xshell2.png)
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
@@ -166,31 +163,19 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 复制上面安装命令代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着输入数字1来安装。安装完成后，如果想修改、查看配置等，可以输入v2ray进行管理页面，不用重复安装脚本。
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-1.PNG)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-2.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-2.PNG)
 
 安装速度很快，安装结束后默认有个kcp协议帐号，如果不想用kcp协议，可以输入v2ray管理页面来进行传输方式的更改。（推荐websocket协议）
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-4.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-4.PNG)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
 
-**注意：如果安装后提示“Failed to start V2Ray Service”，即v2ray无法启动成功，输入以下3条命令**：
-
-> sed -i "s/v2ray -config/v2ray run -config/g" /etc/systemd/system/v2ray.service.d/10-donot_touch_single_conf.conf
-
-> systemctl daemon-reload
-
-> systemctl restart v2ray
-
-如果以上命令还是无法启动，将服务器的v2ray版本退回到指定版本，输入命令：
-
-> v2ray update v4.45.2
-
-> 之后再重启下v2ray就可以了: 输入命令v2ray--数字1服务管理--数字3重启服务
+安装成功后会出现“multi-v2ray install success!”字样。
 
 ***
 
@@ -205,37 +190,6 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 ***
 
-**注意：账号无法使用，可能原因：客户端与服务端的设备系统时间相差过大。解决方法如下：**
-
-**1、一般国外的VPS的镜像都是默认的国外时区，使用起来不是很方便。可以把它修改成北京时间，就会方便很多。**
-**修改中国时区代码如下**：
-
-\cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-
-**2、利用NTP同步时间协议**
-
-**CentOS系统先安装NTP**：yum install ntp ntpdate -y
-
-> 如果是Ubuntu/Debian系统执行下面2条命令来安装NTP
-
-> apt-get update
-
-> apt-get install ntp ntpdate -y  
-
-**安装NTP后，按照顺序依次执行以下3条命令，分别是停止NTP服务、同步NTP时间、启动NTP服务**：
-
-service ntpd stop  
-
-ntpdate us.pool.ntp.org 
-
-service ntpd start 
-
-**执行完成后，VPS上就是相对精确的时间设置了。很多依赖于系统时间的应用程序也就能正常工作了。注意：当vps重启后输入date来检查下时间，如果时间不是最新的，再执行以上3条命令即可。**
-
-> 除了通过NTP来同步时间以外，还可以手动修改vps系统时间，需要先修改中国时区，之后输入时间命令，格式（数字改为和自己电脑时间一致，误差30秒以内）：date -s "2020-2-02 19:14:00"
-
-
-***
 
 **第三步：一键加速VPS服务器**
 
@@ -256,24 +210,24 @@ chmod +x tcp.sh
 
 安装完成后，脚本管理命令为：./tcp.sh
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
 操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr2.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr2.jpg)
 
 内核安装完成后，输入y进行重启，重启才能让内核生效
 
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr3.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr3.jpg)
 
 重启完成后，输入数字6来启动暴力BBR魔改版加速
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr4.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr4.jpg)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr5.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr5.jpg)
 
 输入./tcp.sh查看最终是否启动成功。
 
@@ -281,7 +235,7 @@ chmod +x tcp.sh
 
 **注意：如果在安装内核环节出现这样一张图，注意选择NO**
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
 
 ***
 
@@ -304,36 +258,7 @@ chmod +x tcp.sh
 
 **常见问题参考解决方法**：
 
-**1、账号无法使用，可能原因一：客户端与服务端的设备系统时间相差过大。**
-
-**a、一般国外的VPS的镜像都是默认的国外时区，使用起来不是很方便。可以把它修改成北京时间，就会方便很多。**
-**修改中国时区代码如下**：
-
-\cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-
-**b、利用NTP同步时间协议**
-
-**CentOS系统先安装NTP**：yum install ntp ntpdate -y
-
-> 如果是Ubuntu/Debian系统执行下面2条命令来安装NTP
-
-> apt-get update
-
-> apt-get install ntp ntpdate -y  
-
-**安装NTP后，按照顺序依次执行以下3条命令，分别是停止NTP服务、同步NTP时间、启动NTP服务**：
-
-service ntpd stop  
-
-ntpdate us.pool.ntp.org 
-
-service ntpd start 
-
-**执行完成后，VPS上就是相对精确的时间设置了。很多依赖于系统时间的应用程序也就能正常工作了。注意：当vps重启后输入date来检查下时间，如果时间不是最新的，再执行以上3条命令即可。**
-
-> 除了通过NTP来同步时间以外，还可以手动修改vps系统时间，需要先修改中国时区，之后输入时间命令，格式（数字改为和自己电脑时间一致，误差30秒以内）：date -s "2020-2-02 19:14:00"
-
-**2、账号无法使用，可能原因：vps防火墙端口没有放开或者本地电脑防火墙、杀毒软件阻挡代理软件。**
+**1、账号无法使用，可能原因：vps防火墙端口没有放开或者本地电脑防火墙、杀毒软件阻挡代理软件。**
 
 关闭vps防火墙即可开放所有端口，本地电脑防火墙和杀毒软件手动关闭即可。
 
@@ -344,7 +269,7 @@ service ntpd start
 禁止firewall开机启动命令：systemctl disable firewalld.service
 
 
-**3、搭建的账号之前能用，突然不能用了，怎么解决？**
+**2、搭建的账号之前能用，突然不能用了，怎么解决？**
 
 如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。
 
@@ -352,9 +277,9 @@ service ntpd start
 
 如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。
 
-**4、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
+**3、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
 
-支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
+支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。(注意：使用Reality协议，v2rayN客户端版本需要6.21或以上)
 
 脚本：wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
@@ -362,19 +287,19 @@ service ntpd start
 
 **一图教程(快速使用)**：
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-1.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-1.jpg)
 
 **进阶使用**：
 
 1、个性化安装
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-2.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-2.jpg)
 
-2.单独安装Reality（无需域名）（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
+2.单独安装Reality（无需域名） (注意：使用Reality协议，v2rayN客户端版本需要6.21或以上)
 
-![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-3.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-3.jpg)
 
 
 ***
 
-有问题可以发邮件至海外邮箱kebi2014@gmail.com
+有问题可以发邮件至海外邮箱rebeccalane27@gmail.com
